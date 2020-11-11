@@ -1,0 +1,22 @@
+{
+	"name": "Productivity Tracker",
+	"version": "1.0",
+	"description": "Chrome extension to track productivity.",
+	"manifest_version": 2,
+	"icons": {
+		"16": "images/study16.png",
+		"48": "images/study48.png",
+		"128": "images/study128.png"
+	},
+	"background" : {
+   "scripts" : ["background.js"]
+	},
+	"browser_action" : {
+		"default_icon" : "images/study.png",
+		"default_popup" : "popup.html"
+	},
+	"permissions": [
+        "activeTab",
+        "tabs","storage" 
+     ]
+}
